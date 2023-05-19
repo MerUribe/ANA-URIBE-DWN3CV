@@ -43,4 +43,6 @@ async function weather (city){
 searchBtn.addEventListener("click", ()=>{
     weather (search.value);
 
+    localStorage.setItem("ciudadIngresada",JSON.stringify(search.value));    
+
 })
