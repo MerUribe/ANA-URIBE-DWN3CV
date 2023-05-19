@@ -23,13 +23,14 @@ async function weather (city){
     document.querySelector(".feels_like").innerHTML = data.main.feels_like + "°c";
     document.querySelector(".pressure").innerHTML = data.main.pressure + "hPa";
 
+
     if(data.weather[0].main == "Clouds"){
         iconoClima.src = "img/nublado.jpeg";
     }
     else if(data.weather[0].main == "Clear"){
         iconoClima.src = "img/soleado.jpeg";
     }
-    else if(data.weather[0].main == "Rainr"){
+    else if(data.weather[0].main == "Rain"){
         iconoClima.src = "img/lluvioso.jpeg";
     }
     else if(data.weather[0].main == "Drizzle"){
@@ -43,6 +44,10 @@ async function weather (city){
 searchBtn.addEventListener("click", ()=>{
     weather (search.value);
 
-    localStorage.setItem("ciudadIngresada",JSON.stringify(search.value));    
 
+
+localStorage.setItem("ciudadIngresada",JSON.stringify(search.value));    
 })
+
+
+

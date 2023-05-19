@@ -13,45 +13,37 @@
 </head>
 <body>
     <div class="container">
-        <div class="search">
-            <input type="text" placeholder="Ingresa el nombre de la ciudad">
-            <button><img src="img/lupa.jpg"></button>
-        </div>
-        <div class="weather">
-            <img src="img/soleado.jpeg" class="icono-clima">
-            <h1 class="temp"></h1>
-            <h2 class="city"></h2>
-            <div class="detalles col-12 fs-4">
-                <div class="col-6">
-                    <p class="humidity"></p>
-                    <p>Humedad</p>
-                </div>
-                <div class="col-6">
-                    <p class="wind"></p>
-                    <p>Viento</p>
-                </div>
-                <div class="col-6">
-                    <p class="temp_max"></p>
-                    <p>Temp. Max.</p>
-                </div>
-                <div class="col-6">
-                    <p class="temp_min"></p>
-                    <p>Temp. Min.</p>
-                </div>
-                <div class="col-6">
-                    <p class="feels_like"></p>
-                    <p>Sensación Térmica</p>
-                </div>
-                <div class="col-6">
-                    <p class="pressure"></p>
-                    <p>Presión Atmosférica</p>
-                </div>    
+        <div>
+            <h1>Servicio Meteorológico</h1>
             
-            </div>  
-        </div> 
+        </div>
+        <div class="card">
+            <div class="search">
+                <input type="text" placeholder="Ingresa el nombre de la ciudad">
+                <button><img src="img/lupa.jpg"></button>
+            </div>
+            <div class="weather">
+                <img src="img/soleado.jpeg" class="icono-clima">
+                <h2 class="temp"></h1>
+                <h3 class="city"></h2>
+            </div>
+            
+            <ul class="detalles list-group list-group-flush">
+              <li class="list-group-item">Humedad</li>
+              <p class="humidity"></p>
+              <li class="list-group-item">Viento</li>
+              <p class="wind"></p>
+              <li class="list-group-item">Temp. Max.</li>
+              <p class="temp_max"></p>
+              <li class="list-group-item">Temp. Min.</li>
+              <p class="temp_min"></p>
+              <li class="list-group-item">Sensación Térmica</li>
+              <p class="feels_like"></p>
+              <li class="list-group-item">Presión Atmosférica</li>
+              <p class="pressure"></p>
+            </ul>
+        </div>
         
-        
-
     </div>
  
     
