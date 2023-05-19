@@ -18,7 +18,23 @@ async function weather (city){
     document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°c";
     document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
     document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
+ 
 
+    if(data.weather[0].main == "Clouds"){
+        iconoClima.src = "img/nublado.jpeg";
+    }
+    else if(data.weather[0].main == "Clear"){
+        iconoClima.src = "img/soleado.jpeg";
+    }
+    else if(data.weather[0].main == "Rainr"){
+        iconoClima.src = "img/lluvioso.jpeg";
+    }
+    else if(data.weather[0].main == "Drizzle"){
+        iconoClima.src = "img/seminublado.jpeg";
+    }
+    else if(data.weather[0].main == "Mist"){
+        iconoClima.src = "img/noche.jpeg";
+    }
 }
 
 searchBtn.addEventListener("click", ()=>{
