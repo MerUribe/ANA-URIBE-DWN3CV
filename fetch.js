@@ -18,7 +18,10 @@ async function weather (city){
     document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°c";
     document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
     document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
- 
+    document.querySelector(".temp_max").innerHTML = data.main.temp_max + "°c";
+    document.querySelector(".temp_min").innerHTML = data.main.temp_min + "°c";
+    document.querySelector(".feels_like").innerHTML = data.main.feels_like + "°c";
+    document.querySelector(".pressure").innerHTML = data.main.pressure + "hPa";
 
     if(data.weather[0].main == "Clouds"){
         iconoClima.src = "img/nublado.jpeg";
